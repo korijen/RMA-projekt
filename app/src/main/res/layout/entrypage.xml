@@ -1,0 +1,77 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        />
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="QUIZARD"
+        app:menu="@menu/top_app_bar"
+        android:background="#0099ff"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        />
+
+    <TextView
+        android:id="@+id/tvYourquizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR QUIZES"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="100dp"
+        android:src="@drawable/ic_launcher_background"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MOST POPULAR"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="270dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="320dp"
+        android:src="@drawable/ic_launcher_foreground"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START NEW GAME"
+        android:layout_marginTop="230dp"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        app:backgroundTint="#0099ff"
+        />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="675dp"
+        android:background="#0099ff"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</FrameLayout>
