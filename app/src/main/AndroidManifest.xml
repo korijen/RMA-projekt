@@ -4,7 +4,6 @@
     package="com.example.projektnizadatakrma">
 
     <application
-        android:name ="com.example.projektnizadatakrma"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,7 +12,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjektniZadatakRMA"
-        tools:targetApi="31"
-         />
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.example.projektnizadatakrma.EntryPage"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.projektnizadatakrma.NewGamePage"></activity>
+        <activity android:name="com.example.projektnizadatakrma.LeadersPage"></activity>
+        <activity android:name="com.example.projektnizadatakrma.ProfilePage"></activity>
+        <activity android:name="com.example.projektnizadatakrma.CreateQuizPage"></activity>
+    </application>
 
 </manifest>

@@ -1,43 +1,28 @@
 package com.example.projektnizadatakrma
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.projektnizadatakrma.databinding.EntrypageBinding
 import com.example.projektnizadatakrma.databinding.LeaderspageBinding
 
 
 
-class LeadersPage: Fragment() {
+class LeadersPage: AppCompatActivity() {
     lateinit var binding: LeaderspageBinding
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         binding = LeaderspageBinding.inflate(layoutInflater)
-        return binding.root
-    }
+        setContentView(binding.root)
 
-    private fun setupRecyclerView() {
-        binding.rvLeaderbord.layoutManager = LinearLayoutManager(
-            context,
-            LinearLayoutManager.VERTICAL,
-            false
-        )
-    }
-    override fun onResume() {
-        super.onResume()
-        updateData()
-    }
 
-    private fun updateData() {
-     //   adapter.setLeaderbord(getAllLeaders())
     }
-
 
 }

@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/page_1"
+        android:id="@+id/itHome"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="HOME"/>
 
     <item
-        android:id="@+id/page_2"
+        android:id="@+id/itLeaders"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_background"
         android:title="LEADERS"/>
     <item
-        android:id="@+id/page_3"
+        android:id="@+id/itCreate"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_background"
         android:title="CREATE"/>
